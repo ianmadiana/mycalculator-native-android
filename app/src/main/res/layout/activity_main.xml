@@ -7,6 +7,7 @@
     android:layout_height="match_parent"
     android:layout_margin="20dp"
     android:padding="16dp"
+    android:gravity="center_horizontal"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -48,6 +49,49 @@
         android:inputType="numberDecimal"
         android:lines="1"
         android:layout_marginBottom="16dp"/>
+
+<!--    COUNTER -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="16dp">
+
+        <!-- Tombol "+" -->
+        <Button
+            android:id="@+id/btn_plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:minWidth="40dp"
+            android:layout_marginEnd="8dp"/>
+
+        <!-- TextView untuk angka -->
+        <TextView
+            android:id="@+id/tv_counter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:minWidth="50dp"
+            android:layout_marginEnd="8dp"/>
+
+        <!-- Tombol "-" -->
+        <Button
+            android:id="@+id/btn_minus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:minWidth="40dp"/>
+
+    </LinearLayout>
+
+    <!--    SPACER -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
 
 <!--    BUTTON CALCULATE-->
     <Button
