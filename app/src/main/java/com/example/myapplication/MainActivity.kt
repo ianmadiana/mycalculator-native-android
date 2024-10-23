@@ -42,13 +42,13 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         btnCalculate.setOnClickListener(this)
 
        btnPlus.setOnClickListener {
-           val currentResult = tvCounter.text.toString().toInt() ?: 0
+           val currentResult = tvCounter.text.toString().toInt()
            val newResult = currentResult + 1
            tvCounter.text = newResult.toString()
        }
 
         btnMinus.setOnClickListener {
-            val currentResult = tvCounter.text.toString().toInt() ?: 0
+            val currentResult = tvCounter.text.toString().toInt()
             val newResult = currentResult - 1
             tvCounter.text = newResult.toString()
         }
