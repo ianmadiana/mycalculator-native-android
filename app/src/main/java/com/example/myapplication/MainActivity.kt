@@ -78,15 +78,15 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             var isEmptyfield = false
             if (inputLength.isEmpty()) {
                 isEmptyfield = true
-                edtLength.error = "Field ini tidak boleh kosong"
+                edtLength.error = getString(R.string.error_empty_field)
             }
             if (inputHeight.isEmpty()) {
                 isEmptyfield = true
-                edtHeight.error = "Field ini tidak boleh kosong"
+                edtHeight.error = getString(R.string.error_empty_field)
             }
             if (inputWidth.isEmpty()) {
                 isEmptyfield = true
-                edtWidth.error = "Field ini tidak boleh kosong"
+                edtWidth.error = getString(R.string.error_empty_field)
             }
             if (!isEmptyfield) {
                 val volume = inputLength.toDouble() * inputWidth.toDouble() * inputHeight.toDouble()

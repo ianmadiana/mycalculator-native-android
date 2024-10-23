@@ -5,4 +5,5 @@
     <string name="tinggiLabel">Tinggi</string>
     <string name="hitungButton">Hitung</string>
     <string name="hasilTextView">Hasil:</string>
+    <string name="error_empty_field">Field ini tidak boleh kosong</string>
 </resources>
